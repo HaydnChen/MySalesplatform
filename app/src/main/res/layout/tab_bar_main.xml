@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:id="@+id/sp_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/bg_white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tab_menu_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_item_home"
+            android:text="@string/tab_menu_item_label_home"
+            style="@style/AppTheme.TabMenu" />
+
+        <TextView
+            android:id="@+id/tab_menu_customer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_item_customer"
+            android:text="@string/tab_menu_item_label_customer"
+            style="@style/AppTheme.TabMenu" />
+
+        <TextView
+            android:id="@+id/tab_menu_fna"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_item_fna"
+            android:text="@string/tab_menu_item_label_fna"
+            android:textColor="@drawable/tab_menu_text"
+            style="@style/AppTheme.TabMenu"
+            android:layout_gravity="bottom" />
+
+        <TextView
+            android:id="@+id/tab_menu_quotation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_item_quotation"
+            android:text="@string/tab_menu_item_label_quotation"
+            style="@style/AppTheme.TabMenu" />
+
+
+        <TextView
+            android:id="@+id/tab_menu_policy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_menu_item_policy"
+            android:text="@string/tab_menu_item_label_policy"
+            style="@style/AppTheme.TabMenu" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/dark_blue"
+        android:layout_above="@id/sp_tab_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sp_tab_bar"
+        android:layout_above="@+id/div_tab_bar"
+        android:id="@+id/ly_content">
+    </FrameLayout>
+</RelativeLayout>
